@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,952 +14,1018 @@
     <title>CoinTech2u Malaysia | Robot Trading</title>
   </head>
   <body class="bg-gradient-to-l from-white to-violet-100">
-    <!-- Navbar  -->
-    <header class="relative">
-      <div class="px-4 sm:px-6 md:px-8">
-        <div class="relative flex items-center justify-between pt-6 lg:pt-8">
-          <span class="flex">
-            <img
-              src="./image/logo_min.png"
-              alt="#logo"
-              class="w-8 rounded-full sm:mr-3"
-            />
-            <p class="text-lg font-bold">CoinTech2u</p>
-          </span>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"></div>
+      <!-- Navbar  -->
+      <header class="relative">
+        <div class="px-4 sm:px-6 md:px-8">
+          <div class="relative flex items-center justify-between pt-2 lg:pt-2">
+            <span class="flex">
+              <img
+                src="./image/logo_min.png"
+                alt="#logo"
+                class="w-8 rounded-full sm:mr-3"
+              />
+              <p class="text-lg font-bold">CoinTech2u</p>
+            </span>
 
-          <!-- navbar here -->
-          <div class="flex items-center">
-            <button
-              type="button"
-              class="-my-1 flex h-8 w-8 items-center justify-center text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 md:hidden"
-            >
-              <span class="sr-only">Search</span
-              ><svg
-                width="24"
-                height="24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="m19 19-3.5-3.5"></path>
-                <circle cx="11" cy="11" r="6"></circle>
-              </svg>
-            </button>
-
-            <!--  -->
-            <div class="-my-1 -mr-1 ml-2 md:hidden">
+            <!-- navbar here -->
+            <div class="flex items-center">
               <button
                 type="button"
-                class="flex h-8 w-8 items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+                class="-my-1 flex h-8 w-8 items-center justify-center text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 md:hidden"
               >
-                <span class="sr-only">Navigation</span
-                ><svg width="24" height="24" fill="none" aria-hidden="true">
-                  <path
-                    d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
+                <span class="sr-only">Search</span
+                ><svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m19 19-3.5-3.5"></path>
+                  <circle cx="11" cy="11" r="6"></circle>
                 </svg>
               </button>
-              <div
-                style="
-                  position: fixed;
-                  top: 1px;
-                  left: 1px;
-                  width: 1px;
-                  height: 0;
-                  padding: 0;
-                  margin: -1px;
-                  overflow: hidden;
-                  clip: rect(0, 0, 0, 0);
-                  white-space: nowrap;
-                  border-width: 0;
-                  display: none;
-                "
-              ></div>
-            </div>
-
-            <!--  -->
-            <div class="hidden items-center md:flex">
-              <nav>
-                <ul class="flex items-center gap-x-8 font-semibold">
-                  <li>
-                    <a
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="#features"
-                      >Futures</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://drive.google.com/drive/folders/1CDGLkuC0EVtjqN1cLKgyrYy773dXo0UY?usp=sharing"
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      >Download</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="https://t.me/cointecheducation"
-                      >Community</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="#faq"
-                      >Faq</a
-                    >
-                  </li>
-                </ul>
-              </nav>
 
               <!--  -->
-              <div
-                class="ml-6 flex items-center border-l border-slate-200 pl-6 dark:border-slate-800"
-              >
+              <div class="-my-1 -mr-1 ml-2 md:hidden">
                 <button
-                  id="login"
                   type="button"
-                  class="rounded-lg border-2 border-softBlue bg-softBlue px-8 py-2 font-semibold text-white shadow-md hover:bg-white hover:text-softBlue"
+                  class="flex h-8 w-8 items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
                 >
-                  Login
-                </button>
-
-                <a
-                  href="https://github.com/mohdxnizamv"
-                  class="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
-                >
-                  <span class="sr-only"> mohdxnizamv on GitHub </span>
-
-                  <svg
-                    viewBox="0 0 16 16"
-                    class="h-5 w-5"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
+                  <span class="sr-only">Navigation</span
+                  ><svg width="24" height="24" fill="none" aria-hidden="true">
                     <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                      d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
                     ></path>
                   </svg>
-                </a>
+                </button>
+                <div
+                  style="
+                    position: fixed;
+                    top: 1px;
+                    left: 1px;
+                    width: 1px;
+                    height: 0;
+                    padding: 0;
+                    margin: -1px;
+                    overflow: hidden;
+                    clip: rect(0, 0, 0, 0);
+                    white-space: nowrap;
+                    border-width: 0;
+                    display: none;
+                  "
+                ></div>
+              </div>
+
+              <!--  -->
+              <div class="hidden items-center md:flex">
+                <nav>
+                  <ul class="flex items-center gap-x-8 font-semibold">
+                    <li>
+                      <a
+                        class="hover:text-sky-500 dark:hover:text-sky-400"
+                        href="#features"
+                        >Futures</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://drive.google.com/drive/folders/1CDGLkuC0EVtjqN1cLKgyrYy773dXo0UY?usp=sharing"
+                        class="hover:text-sky-500 dark:hover:text-sky-400"
+                        >Download</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="hover:text-sky-500 dark:hover:text-sky-400"
+                        href="https://t.me/cointecheducation"
+                        >Community</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="hover:text-sky-500 dark:hover:text-sky-400"
+                        href="#faq"
+                        >Faq</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+
+                <!--  -->
+                <div
+                  class="ml-6 flex items-center border-l border-slate-200 pl-6 dark:border-slate-800"
+                >
+                  <button
+                    id="login"
+                    type="button"
+                    class="rounded-lg border-2 border-softBlue bg-softBlue px-8 py-2 font-semibold text-white shadow-md hover:bg-white hover:text-softBlue"
+                  >
+                    Login
+                  </button>
+
+                  <a
+                    href="https://github.com/mohdxnizamv"
+                    class="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
+                  >
+                    <span class="sr-only"> mohdxnizamv on GitHub </span>
+
+                    <svg
+                      viewBox="0 0 16 16"
+                      class="h-5 w-5"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <section class="py-12">
-      <!-- Container For Image & Content -->
-      <div
-        class="container mx-auto flex flex-col-reverse sm:p-2 md:p-2 lg:mb-0 lg:flex-row lg:p-10 xl:p-10"
-      >
-        <!-- Content -->
-        <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
-          <h1 class="mt-3 text-center lg:text-left">
-            Robot Trading Future, <br />
-            Terbaik !!
-          </h1>
+      <section class="py-12">
+        <!-- Container For Image & Content -->
+        <div
+          class="container mx-auto flex flex-col-reverse sm:p-2 md:p-2 lg:mb-0 lg:flex-row lg:p-10 xl:p-10"
+        >
+          <!-- Content -->
+          <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+            <h1 class="mt-3 text-center lg:text-left">
+              Robot Trading Future, <br />
+              Terbaik !!
+            </h1>
 
-          <p class="mx-auto max-w-xl text-justify lg:mx-0 lg:mt-0">
-            CoinTech2u adalah robot perdagangan AI Hedging yang merupakan salah
-            satu robot perdagangan terbaik pada tahun 2023. Robot ini sangat
-            terbukti untuk digunakan, kerana fund deposit kita pada akaun
-            peribadi Binance sendiri. <br />
-            <span class="font-bold">CoinTech2u Malaysia</span>
+            <p class="mx-auto max-w-xl text-justify lg:mx-0 lg:mt-0">
+              CoinTech2u adalah robot perdagangan AI Hedging yang merupakan
+              salah satu robot perdagangan terbaik pada tahun 2023. Robot ini
+              sangat terbukti untuk digunakan, kerana fund deposit kita pada
+              akaun peribadi Binance sendiri. <br />
+              <span class="font-bold">CoinTech2u Malaysia</span>
+            </p>
+
+            <!-- Buttons Container -->
+            <div
+              x-data="{dropdownMenu: false}"
+              class="flex w-full items-center justify-center space-x-4 lg:justify-start"
+            >
+              <a href="https://bit.ly/3HXaRqu" class="btn2"
+                >SignUp CoinTech2u</a
+              >
+
+              <button class="btn" @click="dropdownMenu = ! dropdownMenu">
+                SignUp Exchanger
+
+                <div
+                  x-show="dropdownMenu"
+                  class="absolute right-auto mt-10 w-[200px]"
+                >
+                  <div class="flex flex-wrap space-x-6 space-y-3">
+                    <a href="https://bit.ly/41zRMS3" class="btn"
+                      ><img
+                        src="./image/logo-binance.png"
+                        alt="#binance"
+                        class="mr-3 inline w-4 rounded-full"
+                      />
+                      Binance</a
+                    >
+
+                    <a href="https://bit.ly/3Pw4G0Q" class="btn2"
+                      ><img
+                        src="./image/logo-bybit.png"
+                        alt="#bybit"
+                        class="mr-3 inline w-4 rounded-full"
+                      />
+                      Bybit</a
+                    >
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+            <div class="bg-hero"></div>
+            <img
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              src="./image/mobile_c2u-new.png"
+              alt="#"
+              class="mx-auto sm:w-60 xl:w-max"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Heading -->
+      <section id="features">
+        <div class="container mx-auto mt-16 px-2">
+          <h1 class="mb-6 text-center">CoinTech2u</h1>
+          <p class="mb-3 text-justify">
+            <strong>Cointech2U</strong> adalah sebuah robot trading crypto yang
+            dirancang khusus untuk melakukan perdagangan Futures di Bybit dan
+            Binance dengan strategi Hedging (2 arah, short dan long). Robot ini
+            telah diuji dan telah digunakan selama 3 bulan tanpa mengalami
+            kekalahan (win rate 100%) dengan potensi profit mencapai 10-30% per
+            bulan.
           </p>
 
-          <!-- Buttons Container -->
+          <p class="mb-3 text-justify">
+            Robot ini menggunakan teknologi AI (Artificial Intelligence) yang
+            membolehkan bot untuk bekerja 24 jam sehari, 7x seminggu untuk
+            membuka dan menutup order secara automatik dan mencari profit bagi
+            pengguna. Dengan demikian, pengguna tidak perlu mempelajari teknikal
+            analisis atau memahami tentang bitcoin dan cryptocurrency untuk
+            dapat menggunakan robot ini.
+          </p>
+
+          <p class="mb-3 text-justify">
+            Pengguna hanya perlu menyiapkan modal dan mengikuti panduan serta
+            SOP (Standard Operating Procedure) yang diberikan oleh Cointech2U
+            dan Team Kami. Robot ini sudah diuji dalam 3 bulan bisa memberikan
+            konsistensi profit setiap hari dengan risiko yang rendah. Cointech2u
+            Malaysia
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mx-auto mt-16 px-2">
+          <h1 class="mb-6 text-center">Kelebihan Cointech2U</h1>
+          <p class="text-justify">
+            Robot AI Futures terbaru 2023 dengan strategi "HEDGING" adalah
+            sebuah robot trading cryptocurrency yang menggunakan teknologi "AI"
+            (Artificial Intelligence). Robot ini mampu memberikan keuntungan
+            maksimum setiap hari dan sudah diuji tidak ada loss di PNL Binance
+            selama 90 Hari.
+          </p>
+        </div>
+      </section>
+
+      <section id="promote-satu">
+        <div
+          class="container mx-auto mt-16 max-w-screen-xl py-6 sm:px-6 xl:px-8"
+        >
           <div
-            x-data="{dropdownMenu: false}"
-            class="flex w-full items-center justify-center space-x-4 lg:justify-start"
+            class="grid grid-cols-1 gap-x-4 gap-y-6 pt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6"
           >
-            <a href="https://bit.ly/3HXaRqu" class="btn2">SignUp CoinTech2u</a>
-
-            <button class="btn" @click="dropdownMenu = ! dropdownMenu">
-              SignUp Exchanger
-
-              <div
-                x-show="dropdownMenu"
-                class="absolute right-auto mt-10 w-[200px]"
+            <main
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <section
+                class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
               >
-                <div class="flex flex-wrap space-x-6 space-y-3">
-                  <a href="https://bit.ly/41zRMS3" class="btn"
-                    ><img
-                      src="./image/logo-binance.png"
-                      alt="#binance"
-                      class="mr-3 inline w-4 rounded-full"
-                    />
-                    Binance</a
-                  >
+                <h6 class="mb-12">Robot Trading Automatik</h6>
 
-                  <a href="https://bit.ly/3Pw4G0Q" class="btn2"
-                    ><img
-                      src="./image/logo-bybit.png"
-                      alt="#bybit"
-                      class="mr-3 inline w-4 rounded-full"
-                    />
-                    Bybit</a
+                <p class="mx-auto">
+                  Robot AI adalah percuma kepada user, dan profit sharing 80/20
+                  melalui gas fee.
+                </p>
+              </section>
+            </main>
+            <!--  -->
+
+            <main
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <section
+                class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
+              >
+                <h6 class="mb-12">Tidak Perlu Teknikal Analisa</h6>
+
+                <p class="mx-auto">
+                  Robot AI Cointech2U bekerja 24 jam dan menggunakan strategi
+                  hedging untuk mendapatkan keuntungan setiap hari tanpa
+                  dipengaruhi oleh analisa teknikal dan fundamental.
+                </p>
+              </section>
+            </main>
+            <!--  -->
+
+            <main
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <section
+                class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
+              >
+                <h6 class="mb-12">Data Terpisah</h6>
+
+                <p class="mx-auto">
+                  Deposit yang diperdagangkan disimpan berasingan dalam akaun
+                  exchanger masing-masing.
+                </p>
+              </section>
+            </main>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+
+      <section id="promote-dua">
+        <div class="container mx-auto max-w-screen-xl py-6 sm:px-6 xl:px-8">
+          <div
+            class="grid grid-cols-1 gap-x-4 gap-y-6 pt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6"
+          >
+            <main
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <section
+                class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
+              >
+                <h6 class="mb-12">Bonus 20% Poin Card</h6>
+
+                <p class="mx-auto">
+                  Dapatkan bonus 20% saat membeli "Gas Fee" melalui poin card
+                  dengan minimal pembelian $100.
+                </p>
+              </section>
+            </main>
+            <!--  -->
+
+            <main
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <section
+                class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
+              >
+                <h6 class="mb-12">Modal Minimal</h6>
+
+                <p class="mx-auto">
+                  Minimal modal di Binance/OKX adalah $320 dan biaya gas fee bot
+                  memerlukan minimal $15.
+                </p>
+              </section>
+            </main>
+            <!--  -->
+
+            <main
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <section
+                class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
+              >
+                <h6 class="mb-12">Deposit & Withdraw</h6>
+
+                <p class="mx-auto">
+                  Tidak ada kontrak di sini, sehingga deposit dan penarikan
+                  boleh dilakukan pada bila-bila masa.
+                </p>
+              </section>
+            </main>
+            <!--  -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Tabs -->
+      <section id="tabs">
+        <!-- Tabs/Panels Container -->
+        <div class="container relative mx-auto my-6 mb-32 mt-16 px-6">
+          <div class="bg-tabs"></div>
+          <!-- Tabs Flex Container -->
+          <div
+            class="mx-auto mb-6 flex max-w-xl flex-col justify-center border-b md:flex-row md:space-x-10"
+          >
+            <!-- Tab 1 -->
+            <div
+              class="tab flex cursor-pointer justify-center border-b text-center hover:text-darkred md:w-1/3 md:border-b-0"
+              data-target="panel-1"
+            >
+              <div
+                class="border-b-4 border-darkred py-5 font-bold"
+                data-target="panel-1"
+              >
+                F2F Booking
+              </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div
+              class="tab flex cursor-pointer justify-center border-b text-center hover:text-darkred md:w-1/3 md:border-b-0"
+              data-target="panel-2"
+            >
+              <div class="py-5 font-bold" data-target="panel-2">
+                Pulangan (Return)
+              </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div
+              class="tab flex cursor-pointer justify-center border-b text-center hover:text-darkred md:w-1/3 md:border-b-0"
+              data-target="panel-3"
+            >
+              <div class="py-5 font-bold" data-target="panel-3">
+                Group Support
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Panels -->
+          <div id="panels" class="container mx-auto">
+            <!-- Panel 1 -->
+            <div
+              class="panel panel-1 flex flex-col py-5 md:flex-row md:space-x-7"
+            >
+              <!-- Panel Image -->
+              <div class="flex justify-center md:w-1/2">
+                <img
+                  src="./image/illustration-features-tab-1.svg"
+                  alt=""
+                  class="relative z-10"
+                />
+              </div>
+              <!-- Panel Content -->
+              <div class="flex flex-col space-y-8 md:w-1/2">
+                <h3 class="mt-32 text-center md:mt-0 md:text-left">
+                  F2F Booking
+                </h3>
+                <p class="max-w-md text-center md:text-left">
+                  Term and condition !!
+                </p>
+                <div class="mx-auto md:mx-0">
+                  <a href="#" class="btn2">More Info</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 2 -->
+            <div
+              class="panel panel-2 flex hidden flex-col py-5 md:flex-row md:space-x-7"
+            >
+              <!-- Panel Image -->
+              <div class="flex justify-center md:w-1/2">
+                <img
+                  src="./image/killer setup.jpg"
+                  alt=""
+                  class="relative z-10 rounded-xl"
+                />
+              </div>
+              <!-- Panel Content -->
+              <div class="flex flex-col space-y-8 md:w-1/2">
+                <h3 class="mt-14 text-center md:mt-0 md:text-left">
+                  Pulangan (Return)
+                </h3>
+                <p class="max-w-md text-center md:text-left">
+                  Return pula adalah keuntungan yang diharapkan ke atas modal
+                  pelaburan yang telah dikeluarkan. Terdapat dua jenis pulangan
+                  dalam pelaburan, iaitu jangkaan (expected return) dan pulangan
+                  yang direalisasikan (realized return).
+                </p>
+                <div class="mx-auto md:mx-0">
+                  <a href="#" class="btn2">More Info</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel 3 -->
+            <div
+              class="panel panel-3 flex hidden flex-col py-5 md:flex-row md:space-x-7"
+            >
+              <!-- Panel Image -->
+              <div class="flex justify-center md:w-1/2">
+                <img
+                  src="./image/muras team.jpg"
+                  alt=""
+                  class="relative z-10 w-2/4 rounded-full"
+                />
+              </div>
+              <!-- Panel Content -->
+              <div class="flex flex-col space-y-8 md:w-1/2">
+                <h3 class="mt-14 text-center md:mt-0 md:text-left">
+                  Group Support
+                </h3>
+                <p class="max-w-md text-center md:text-left">
+                  Group ini bertujuan untuk membantu rakan-rakan baru dan update
+                  perjalanan c2u.
+                </p>
+                <div class="mx-auto md:mx-0">
+                  <a href="https://t.me/cointecheducation" class="btn2"
+                    >More Info</a
                   >
                 </div>
               </div>
-            </button>
+            </div>
           </div>
         </div>
+      </section>
 
-        <!-- Image -->
-        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
-          <div class="bg-hero"></div>
-          <img
-            data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            src="./image/mobile_c2u-new.png"
-            alt="#"
-            class="mx-auto sm:w-60 xl:w-max"
-          />
+      <!-- Download Heading -->
+      <section id="download">
+        <div class="container mx-auto px-6">
+          <h2 class="mb-6 text-center">Download the extension</h2>
+          <p class="mx-auto max-w-lg text-center">
+            We've got more browsers in the pipeline. Please do let us know if
+            you've got a favourite you'd like us to prioritize.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Features Heading -->
-    <section id="features">
-      <div class="container mx-auto mt-16 px-2">
-        <h1 class="mb-6 text-center">CoinTech2u</h1>
-        <p class="mb-3 text-justify">
-          <strong>Cointech2U</strong> adalah sebuah robot trading crypto yang
-          dirancang khusus untuk melakukan perdagangan Futures di Bybit dan
-          Binance dengan strategi Hedging (2 arah, short dan long). Robot ini
-          telah diuji dan telah digunakan selama 3 bulan tanpa mengalami
-          kekalahan (win rate 100%) dengan potensi profit mencapai 10-30% per
-          bulan.
-        </p>
-
-        <p class="mb-3 text-justify">
-          Robot ini menggunakan teknologi AI (Artificial Intelligence) yang
-          membolehkan bot untuk bekerja 24 jam sehari, 7x seminggu untuk membuka
-          dan menutup order secara automatik dan mencari profit bagi pengguna.
-          Dengan demikian, pengguna tidak perlu mempelajari teknikal analisis
-          atau memahami tentang bitcoin dan cryptocurrency untuk dapat
-          menggunakan robot ini.
-        </p>
-
-        <p class="mb-3 text-justify">
-          Pengguna hanya perlu menyiapkan modal dan mengikuti panduan serta SOP
-          (Standard Operating Procedure) yang diberikan oleh Cointech2U dan Team
-          Kami. Robot ini sudah diuji dalam 3 bulan bisa memberikan konsistensi
-          profit setiap hari dengan risiko yang rendah. Cointech2u Malaysia
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="container mx-auto mt-16 px-2">
-        <h1 class="mb-6 text-center">Kelebihan Cointech2U</h1>
-        <p class="text-justify">
-          Robot AI Futures terbaru 2023 dengan strategi "HEDGING" adalah sebuah
-          robot trading cryptocurrency yang menggunakan teknologi "AI"
-          (Artificial Intelligence). Robot ini mampu memberikan keuntungan
-          maksimum setiap hari dan sudah diuji tidak ada loss di PNL Binance
-          selama 90 Hari.
-        </p>
-      </div>
-    </section>
-
-    <section id="promote-satu">
-      <div class="container mx-auto mt-16 max-w-screen-xl py-6 sm:px-6 xl:px-8">
+      <!-- Download Boxes -->
+      <section id="download-boxes" class="py-32">
+        <!-- Boxes Container -->
         <div
-          class="grid grid-cols-1 gap-x-4 gap-y-6 pt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6"
+          class="relative mx-auto flex max-w-5xl flex-col items-center space-y-10 px-10 md:flex-row md:space-x-7 md:space-y-0 md:px-6"
         >
-          <main
-            data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            <section
-              class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
-            >
-              <h6 class="mb-12">Robot Trading Automatik</h6>
-
-              <p class="mx-auto">
-                Robot AI adalah percuma kepada user, dan profit sharing 80/20
-                melalui gas fee.
-              </p>
-            </section>
-          </main>
-          <!--  -->
-
-          <main
-            data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            <section
-              class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
-            >
-              <h6 class="mb-12">Tidak Perlu Teknikal Analisa</h6>
-
-              <p class="mx-auto">
-                Robot AI Cointech2U bekerja 24 jam dan menggunakan strategi
-                hedging untuk mendapatkan keuntungan setiap hari tanpa
-                dipengaruhi oleh analisa teknikal dan fundamental.
-              </p>
-            </section>
-          </main>
-          <!--  -->
-
-          <main
-            data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            <section
-              class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
-            >
-              <h6 class="mb-12">Data Terpisah</h6>
-
-              <p class="mx-auto">
-                Deposit yang diperdagangkan disimpan berasingan dalam akaun
-                exchanger masing-masing.
-              </p>
-            </section>
-          </main>
-          <!--  -->
-        </div>
-      </div>
-    </section>
-
-    <section id="promote-dua">
-      <div class="container mx-auto max-w-screen-xl py-6 sm:px-6 xl:px-8">
-        <div
-          class="grid grid-cols-1 gap-x-4 gap-y-6 pt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-6"
-        >
-          <main
-            data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            <section
-              class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
-            >
-              <h6 class="mb-12">Bonus 20% Poin Card</h6>
-
-              <p class="mx-auto">
-                Dapatkan bonus 20% saat membeli "Gas Fee" melalui poin card
-                dengan minimal pembelian $100.
-              </p>
-            </section>
-          </main>
-          <!--  -->
-
-          <main
-            data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            <section
-              class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
-            >
-              <h6 class="mb-12">Modal Minimal</h6>
-
-              <p class="mx-auto">
-                Minimal modal di Binance/OKX adalah $320 dan biaya gas fee bot
-                memerlukan minimal $15.
-              </p>
-            </section>
-          </main>
-          <!--  -->
-
-          <main
-            data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            <section
-              class="mx-5 h-80 max-w-md rounded-xl bg-neutral-50/50 p-5 shadow-2xl"
-            >
-              <h6 class="mb-12">Deposit & Withdraw</h6>
-
-              <p class="mx-auto">
-                Tidak ada kontrak di sini, sehingga deposit dan penarikan boleh
-                dilakukan pada bila-bila masa.
-              </p>
-            </section>
-          </main>
-          <!--  -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Tabs -->
-    <section id="tabs">
-      <!-- Tabs/Panels Container -->
-      <div class="container relative mx-auto my-6 mb-32 mt-16 px-6">
-        <div class="bg-tabs"></div>
-        <!-- Tabs Flex Container -->
-        <div
-          class="mx-auto mb-6 flex max-w-xl flex-col justify-center border-b md:flex-row md:space-x-10"
-        >
-          <!-- Tab 1 -->
+          <!-- Box 1 -->
           <div
-            class="tab flex cursor-pointer justify-center border-b text-center hover:text-darkred md:w-1/3 md:border-b-0"
-            data-target="panel-1"
+            class="flex w-full flex-col space-y-4 rounded-lg py-6 text-center shadow-lg md:w-1/3"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
           >
+            <!-- Image -->
+            <div class="flex justify-center">
+              <img src="./image/logo_min.png" alt="" class="w-24" />
+            </div>
+            <!-- Text -->
+            <h5 class="pt-6">APK File</h5>
+            <p class="">Andorid Version 1.0.39</p>
+
+            <!-- Dots -->
+            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+              <a
+                href="https://drive.google.com/drive/folders/1CDGLkuC0EVtjqN1cLKgyrYy773dXo0UY?usp=sharing"
+                class="butang"
+                >Click And Download</a
+              >
+            </div>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="w-full md:w-1/3">
             <div
-              class="border-b-4 border-darkred py-5 font-bold"
-              data-target="panel-1"
+              class="flex w-full flex-col space-y-4 rounded-lg py-6 text-center shadow-lg md:mt-8"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
             >
-              F2F Booking
-            </div>
-          </div>
+              <!-- Image -->
+              <div class="flex justify-center">
+                <img src="./image/logo-firefox.svg" alt="" />
+              </div>
+              <!-- Text -->
+              <h5 class="pt-6">Add to Firefox</h5>
+              <p class="">Minimum Version 55</p>
 
-          <!-- Tab 2 -->
-          <div
-            class="tab flex cursor-pointer justify-center border-b text-center hover:text-darkred md:w-1/3 md:border-b-0"
-            data-target="panel-2"
-          >
-            <div class="py-5 font-bold" data-target="panel-2">
-              Pulangan (Return)
-            </div>
-          </div>
-
-          <!-- Tab 3 -->
-          <div
-            class="tab flex cursor-pointer justify-center border-b text-center hover:text-darkred md:w-1/3 md:border-b-0"
-            data-target="panel-3"
-          >
-            <div class="py-5 font-bold" data-target="panel-3">
-              Group Support
-            </div>
-          </div>
-        </div>
-
-        <!-- Tab Panels -->
-        <div id="panels" class="container mx-auto">
-          <!-- Panel 1 -->
-          <div
-            class="panel panel-1 flex flex-col py-5 md:flex-row md:space-x-7"
-          >
-            <!-- Panel Image -->
-            <div class="flex justify-center md:w-1/2">
-              <img
-                src="./image/illustration-features-tab-1.svg"
-                alt=""
-                class="relative z-10"
-              />
-            </div>
-            <!-- Panel Content -->
-            <div class="flex flex-col space-y-8 md:w-1/2">
-              <h3 class="mt-32 text-center md:mt-0 md:text-left">
-                F2F Booking
-              </h3>
-              <p class="max-w-md text-center md:text-left">
-                Term and condition !!
-              </p>
-              <div class="mx-auto md:mx-0">
-                <a href="#" class="btn2">More Info</a>
+              <!-- Dots -->
+              <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+                <a
+                  href="https://app.cointech2u.com/h5/index.html#/"
+                  class="butang"
+                  >Click Here</a
+                >
               </div>
             </div>
           </div>
 
-          <!-- Panel 2 -->
-          <div
-            class="panel panel-2 flex hidden flex-col py-5 md:flex-row md:space-x-7"
-          >
-            <!-- Panel Image -->
-            <div class="flex justify-center md:w-1/2">
-              <img
-                src="./image/killer setup.jpg"
-                alt=""
-                class="relative z-10 rounded-xl"
-              />
-            </div>
-            <!-- Panel Content -->
-            <div class="flex flex-col space-y-8 md:w-1/2">
-              <h3 class="mt-14 text-center md:mt-0 md:text-left">
-                Pulangan (Return)
-              </h3>
-              <p class="max-w-md text-center md:text-left">
-                Return pula adalah keuntungan yang diharapkan ke atas modal
-                pelaburan yang telah dikeluarkan. Terdapat dua jenis pulangan
-                dalam pelaburan, iaitu jangkaan (expected return) dan pulangan
-                yang direalisasikan (realized return).
-              </p>
-              <div class="mx-auto md:mx-0">
-                <a href="#" class="btn2">More Info</a>
+          <!-- Box 3 -->
+          <div class="w-full md:w-1/3">
+            <div
+              class="flex w-full flex-col space-y-4 rounded-lg py-6 text-center shadow-lg md:mt-16"
+              data-aos="fade-up"
+              data-aos-offset="400"
+              data-aos-easing="ease-in-sine"
+            >
+              <!-- Image -->
+              <div class="flex justify-center">
+                <img src="./image/logo-chrome.svg" alt="" />
               </div>
-            </div>
-          </div>
+              <!-- Text -->
+              <h5 class="pt-6">Add to Chrome</h5>
+              <p class="">Minimum Version 46</p>
 
-          <!-- Panel 3 -->
-          <div
-            class="panel panel-3 flex hidden flex-col py-5 md:flex-row md:space-x-7"
-          >
-            <!-- Panel Image -->
-            <div class="flex justify-center md:w-1/2">
-              <img
-                src="./image/muras team.jpg"
-                alt=""
-                class="relative z-10 w-2/4 rounded-full"
-              />
-            </div>
-            <!-- Panel Content -->
-            <div class="flex flex-col space-y-8 md:w-1/2">
-              <h3 class="mt-14 text-center md:mt-0 md:text-left">
-                Group Support
-              </h3>
-              <p class="max-w-md text-center md:text-left">
-                Group ini bertujuan untuk membantu rakan-rakan baru dan update
-                perjalanan c2u.
-              </p>
-              <div class="mx-auto md:mx-0">
-                <a href="https://t.me/cointecheducation" class="btn2"
-                  >More Info</a
+              <!-- Dots -->
+              <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+                <a
+                  href="https://app.cointech2u.com/h5/index.html#/"
+                  class="butang"
+                  >Click Here</a
                 >
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Download Heading -->
-    <section id="download">
-      <div class="container mx-auto px-6">
-        <h2 class="mb-6 text-center">Download the extension</h2>
-        <p class="mx-auto max-w-lg text-center">
-          We've got more browsers in the pipeline. Please do let us know if
-          you've got a favourite you'd like us to prioritize.
-        </p>
-      </div>
-    </section>
+      <!-- FAQ Heading -->
+      <section id="faq">
+        <div class="container mx-auto">
+          <h2 class="mb-6 text-center">Frequently Asked Questions</h2>
+          <p class="text-graishBlue mx-auto max-w-lg px-6 text-center">
+            Here are some of our FAQs. If you have any other questions you'd
+            like answered please feel free to email us.
+          </p>
+        </div>
+      </section>
 
-    <!-- Download Boxes -->
-    <section id="download-boxes" class="py-32">
-      <!-- Boxes Container -->
-      <div
-        class="relative mx-auto flex max-w-5xl flex-col items-center space-y-10 px-10 md:flex-row md:space-x-7 md:space-y-0 md:px-6"
-      >
-        <!-- Box 1 -->
-        <div
-          class="flex w-full flex-col space-y-4 rounded-lg py-6 text-center shadow-lg md:w-1/3"
-          data-aos="fade-up"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-        >
-          <!-- Image -->
-          <div class="flex justify-center">
-            <img src="./image/logo_min.png" alt="" class="w-24" />
+      <!-- FAQ Accordion -->
+      <section id="faq-accordion">
+        <!-- Main Container -->
+        <div class="container mx-auto mb-32 px-6">
+          <!-- Accordion Container -->
+          <div class="m-8 mx-auto max-w-2xl overflow-hidden">
+            <!-- Tab 1 -->
+            <div class="group border-b py-1 outline-none" tabindex="1">
+              <!-- Tab Flex Container -->
+              <div
+                class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
+              >
+                <!-- Tab Title -->
+                <div
+                  class="ease font-semibold transition duration-500 group-hover:text-red-500"
+                >
+                  Berapa Modal Minimum?
+                </div>
+                <!-- Arrow -->
+                <div
+                  class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="12"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      d="M1 1l8 8 8-8"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Tab Inner Content -->
+              <div
+                class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
+              >
+                <p class="py-2 text-justify">Minimum modal 320$</p>
+              </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="group border-b py-1 outline-none" tabindex="2">
+              <!-- Tab Flex Container -->
+              <div
+                class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
+              >
+                <!-- Tab Title -->
+                <div
+                  class="ease font-semibold transition duration-500 group-hover:text-red-500"
+                >
+                  Order Fail waktu run. apa punca?
+                </div>
+                <!-- Arrow -->
+                <div
+                  class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="12"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      d="M1 1l8 8 8-8"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Tab Inner Content -->
+              <div
+                class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
+              >
+                <p class="py-2 text-justify">
+                  1. tak set mode hedge pada futures binance - binance > futures
+                  > titik tiga (atas kanan) > preference > position mode >hedge
+                  mode.
+                  <br />
+                  2. gas fee habis or below 15$? - cointech > user > my Wallet >
+                  Check balance.
+                  <br />
+                  3. Tak enable futures trade waktu setup API
+                </p>
+              </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="group border-b py-1 outline-none" tabindex="3">
+              <!-- Tab Flex Container -->
+              <div
+                class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
+              >
+                <!-- Tab Title -->
+                <div
+                  class="ease font-semibold transition duration-500 group-hover:text-red-500"
+                >
+                  Kenapa Untung Binance & Cointech2u tak sama?
+                </div>
+                <!-- Arrow -->
+                <div
+                  class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="12"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      d="M1 1l8 8 8-8"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Tab Inner Content -->
+              <div
+                class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
+              >
+                <p class="py-2 text-justify">
+                  Setiap trading dalam futures binance pun ada futures fee +
+                  funding fee (8jam). Fee nya rendah sahaja. Tapi kalau lepas 2
+                  ke 3 ratus trade akan nampak juga nilainya.
+                  <br />
+                  Extra Tips nak jimat fee pada futures binance ialah dengan
+                  simpan small amount BNB pada futures wallet. Jimat 10% lagi.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tab 4 -->
+            <div class="group border-b py-1 outline-none" tabindex="4">
+              <!-- Tab Flex Container -->
+              <div
+                class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
+              >
+                <!-- Tab Title -->
+                <div
+                  class="ease font-semibold transition duration-500 group-hover:text-red-500"
+                >
+                  Kegunaan Point Card?
+                </div>
+                <!-- Arrow -->
+                <div
+                  class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="12"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      d="M1 1l8 8 8-8"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Tab Inner Content -->
+              <div
+                class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
+              >
+                <p class="py-2 text-justify">
+                  Kegunaan Point Card adalah untuk Gas fee dalam cointech2u sama
+                  seperti letak USDT dalam wallet sahaja.
+                  <br />
+                  Tapi dengan purchase point card kita akan dapat extra value.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tab 5 Update -->
+            <div class="group border-b py-1 outline-none" tabindex="4">
+              <!-- Tab Flex Container -->
+              <div
+                class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
+              >
+                <!-- Tab Title -->
+                <div
+                  class="ease font-semibold transition duration-500 group-hover:text-red-500"
+                >
+                  Special Setup Minimal $2000 above
+                </div>
+                <!-- Arrow -->
+                <div
+                  class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="12"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      d="M1 1l8 8 8-8"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Tab Inner Content -->
+              <div
+                class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
+              >
+                <p class="py-2 text-justify">
+                  Special setup gift yang register under website nie sahaja
+                  diberi keutamaan. <br />
+                  DM! user telegram dibawah
+                </p>
+              </div>
+            </div>
+
+            <!-- Tab 5 Update -->
+            <div class="group border-b py-1 outline-none" tabindex="4">
+              <!-- Tab Flex Container -->
+              <div
+                class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
+              >
+                <!-- Tab Title -->
+                <div
+                  class="ease font-semibold transition duration-500 group-hover:text-red-500"
+                >
+                  DISCLAIMER?
+                </div>
+                <!-- Arrow -->
+                <div
+                  class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="12"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      d="M1 1l8 8 8-8"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Tab Inner Content -->
+              <div
+                class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
+              >
+                <p class="py-2 text-justify">
+                  Website ini bukan web rasmi perusahaan, melainkan web support
+                  sebagai bertujuan untuk membantu team dalam mengembangkan
+                  business Cointech2U .
+                  <br />
+                  Tidak ada claim commission, refund, atau claim apapun yang
+                  dapat dibebankan pada pembagunan website
+                  cointech2umalaysia.com
+                </p>
+              </div>
+            </div>
           </div>
-          <!-- Text -->
-          <h5 class="pt-6">APK File</h5>
-          <p class="">Andorid Version 1.0.39</p>
+        </div>
+      </section>
 
-          <!-- Dots -->
-          <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
+      <!-- Newsletter Section -->
+      <section id="newsletter" class="bg-softBlue">
+        <div class="mx-auto max-w-lg py-24">
+          <p
+            class="mb-6 text-center font-semibold uppercase tracking-widest text-black/70"
+          >
+            3,300+ Already Joined My Team
+          </p>
+          <h2 class="mb-6 px-3 text-center text-black/70">
+            Stay up-to-date with what we're doing
+          </h2>
+
+          <!-- Form -->
+          <form
+            class="mx-auto flex max-w-2xl flex-col items-start justify-center space-y-6 px-6 text-base md:flex-row md:space-x-4 md:space-y-0 md:px-0"
+          >
+            <!-- Input & Button Container -->
+            <div
+              class="mx-auto flex flex-col items-center justify-between md:mx-0 md:flex-row"
+            >
+              <img src="./image/id_telegram.png" alt="id-tele" class="w-28" />
+
+              <p class="animate-bounce font-extrabold text-rose-500">
+                Contact Me Now!
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-veryDarkBlue py-16">
+        <!-- Footer Flex Container -->
+        <div
+          class="container mx-auto flex flex-col items-center justify-between space-y-16 px-6 md:flex-row md:space-y-0"
+        >
+          <!-- Logo/Menu Container -->
+          <div
+            class="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-x-14 md:space-y-0"
+          >
+            <img src="./image/logo_min.png" alt="" class="mb-1 w-12" />
+
+            <a href="#features" class="uppercase hover:text-darkred"
+              >Features</a
+            >
             <a
               href="https://drive.google.com/drive/folders/1CDGLkuC0EVtjqN1cLKgyrYy773dXo0UY?usp=sharing"
-              class="butang"
-              >Click And Download</a
+              class="uppercase hover:text-darkred"
+              >Download</a
             >
+            <a href="#faq" class="uppercase hover:text-darkred">FAQ</a>
+          </div>
+
+          <!-- Social Container -->
+          <div class="flex space-x-10">
+            <a href="#">
+              <img src="./image/icon-facebook.svg" alt="" class="ficon h-6" />
+            </a>
+            <a href="#">
+              <img src="./image/icon-twitter.svg" alt="" class="ficon h-6" />
+            </a>
           </div>
         </div>
+      </footer>
 
-        <!-- Box 2 -->
-        <div class="w-full md:w-1/3">
-          <div
-            class="flex w-full flex-col space-y-4 rounded-lg py-6 text-center shadow-lg md:mt-8"
-            data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-          >
-            <!-- Image -->
-            <div class="flex justify-center">
-              <img src="./image/logo-firefox.svg" alt="" />
-            </div>
-            <!-- Text -->
-            <h5 class="pt-6">Add to Firefox</h5>
-            <p class="">Minimum Version 55</p>
-
-            <!-- Dots -->
-            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
-              <a
-                href="https://app.cointech2u.com/h5/index.html#/"
-                class="butang"
-                >Click Here</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Box 3 -->
-        <div class="w-full md:w-1/3">
-          <div
-            class="flex w-full flex-col space-y-4 rounded-lg py-6 text-center shadow-lg md:mt-16"
-            data-aos="fade-up"
-            data-aos-offset="400"
-            data-aos-easing="ease-in-sine"
-          >
-            <!-- Image -->
-            <div class="flex justify-center">
-              <img src="./image/logo-chrome.svg" alt="" />
-            </div>
-            <!-- Text -->
-            <h5 class="pt-6">Add to Chrome</h5>
-            <p class="">Minimum Version 46</p>
-
-            <!-- Dots -->
-            <div class="bg-dots bg-repeat-x px-6 pt-6 capitalize">
-              <a
-                href="https://app.cointech2u.com/h5/index.html#/"
-                class="butang"
-                >Click Here</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Heading -->
-    <section id="faq">
-      <div class="container mx-auto">
-        <h2 class="mb-6 text-center">Frequently Asked Questions</h2>
-        <p class="text-graishBlue mx-auto max-w-lg px-6 text-center">
-          Here are some of our FAQs. If you have any other questions you'd like
-          answered please feel free to email us.
-        </p>
-      </div>
-    </section>
-
-    <!-- FAQ Accordion -->
-    <section id="faq-accordion">
-      <!-- Main Container -->
-      <div class="container mx-auto mb-32 px-6">
-        <!-- Accordion Container -->
-        <div class="m-8 mx-auto max-w-2xl overflow-hidden">
-          <!-- Tab 1 -->
-          <div class="group border-b py-1 outline-none" tabindex="1">
-            <!-- Tab Flex Container -->
-            <div
-              class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
-            >
-              <!-- Tab Title -->
-              <div
-                class="ease font-semibold transition duration-500 group-hover:text-red-500"
-              >
-                Berapa Modal Minimum?
-              </div>
-              <!-- Arrow -->
-              <div
-                class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    d="M1 1l8 8 8-8"
-                  />
-                </svg>
-              </div>
-            </div>
-
-            <!-- Tab Inner Content -->
-            <div
-              class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
-            >
-              <p class="py-2 text-justify">Minimum modal 320$</p>
-            </div>
-          </div>
-
-          <!-- Tab 2 -->
-          <div class="group border-b py-1 outline-none" tabindex="2">
-            <!-- Tab Flex Container -->
-            <div
-              class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
-            >
-              <!-- Tab Title -->
-              <div
-                class="ease font-semibold transition duration-500 group-hover:text-red-500"
-              >
-                Order Fail waktu run. apa punca?
-              </div>
-              <!-- Arrow -->
-              <div
-                class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    d="M1 1l8 8 8-8"
-                  />
-                </svg>
-              </div>
-            </div>
-
-            <!-- Tab Inner Content -->
-            <div
-              class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
-            >
-              <p class="py-2 text-justify">
-                1. tak set mode hedge pada futures binance - binance > futures >
-                titik tiga (atas kanan) > preference > position mode >hedge
-                mode.
-                <br />
-                2. gas fee habis or below 15$? - cointech > user > my Wallet >
-                Check balance.
-                <br />
-                3. Tak enable futures trade waktu setup API
-              </p>
-            </div>
-          </div>
-
-          <!-- Tab 3 -->
-          <div class="group border-b py-1 outline-none" tabindex="3">
-            <!-- Tab Flex Container -->
-            <div
-              class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
-            >
-              <!-- Tab Title -->
-              <div
-                class="ease font-semibold transition duration-500 group-hover:text-red-500"
-              >
-                Kenapa Untung Binance & Cointech2u tak sama?
-              </div>
-              <!-- Arrow -->
-              <div
-                class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    d="M1 1l8 8 8-8"
-                  />
-                </svg>
-              </div>
-            </div>
-
-            <!-- Tab Inner Content -->
-            <div
-              class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
-            >
-              <p class="py-2 text-justify">
-                Setiap trading dalam futures binance pun ada futures fee +
-                funding fee (8jam). Fee nya rendah sahaja. Tapi kalau lepas 2 ke
-                3 ratus trade akan nampak juga nilainya.
-                <br />
-                Extra Tips nak jimat fee pada futures binance ialah dengan
-                simpan small amount BNB pada futures wallet. Jimat 10% lagi.
-              </p>
-            </div>
-          </div>
-
-          <!-- Tab 4 -->
-          <div class="group border-b py-1 outline-none" tabindex="4">
-            <!-- Tab Flex Container -->
-            <div
-              class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
-            >
-              <!-- Tab Title -->
-              <div
-                class="ease font-semibold transition duration-500 group-hover:text-red-500"
-              >
-                Kegunaan Point Card?
-              </div>
-              <!-- Arrow -->
-              <div
-                class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    d="M1 1l8 8 8-8"
-                  />
-                </svg>
-              </div>
-            </div>
-
-            <!-- Tab Inner Content -->
-            <div
-              class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
-            >
-              <p class="py-2 text-justify">
-                Kegunaan Point Card adalah untuk Gas fee dalam cointech2u sama
-                seperti letak USDT dalam wallet sahaja.
-                <br />
-                Tapi dengan purchase point card kita akan dapat extra value.
-              </p>
-            </div>
-          </div>
-
-          <!-- Tab 5 Update -->
-          <div class="group border-b py-1 outline-none" tabindex="4">
-            <!-- Tab Flex Container -->
-            <div
-              class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
-            >
-              <!-- Tab Title -->
-              <div
-                class="ease font-semibold transition duration-500 group-hover:text-red-500"
-              >
-                Special Setup Minimal $2000 above
-              </div>
-              <!-- Arrow -->
-              <div
-                class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    d="M1 1l8 8 8-8"
-                  />
-                </svg>
-              </div>
-            </div>
-
-            <!-- Tab Inner Content -->
-            <div
-              class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
-            >
-              <p class="py-2 text-justify">
-                Special setup gift yang register under website nie sahaja diberi
-                keutamaan. <br />
-                DM! user telegram dibawah
-              </p>
-            </div>
-          </div>
-
-          <!-- Tab 5 Update -->
-          <div class="group border-b py-1 outline-none" tabindex="4">
-            <!-- Tab Flex Container -->
-            <div
-              class="ease group flex cursor-pointer items-center justify-between py-3 transition duration-500"
-            >
-              <!-- Tab Title -->
-              <div
-                class="ease font-semibold transition duration-500 group-hover:text-red-500"
-              >
-                DISCLAIMER?
-              </div>
-              <!-- Arrow -->
-              <div
-                class="ease transition duration-500 group-focus:-rotate-180 group-focus:text-red-500"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                    d="M1 1l8 8 8-8"
-                  />
-                </svg>
-              </div>
-            </div>
-
-            <!-- Tab Inner Content -->
-            <div
-              class="ease max-h-0 overflow-hidden transition duration-500 group-focus:max-h-screen"
-            >
-              <p class="py-2 text-justify">
-                Website ini bukan web rasmi perusahaan, melainkan web support
-                sebagai bertujuan untuk membantu team dalam mengembangkan
-                business Cointech2U .
-                <br />
-                Tidak ada claim commission, refund, atau claim apapun yang dapat
-                dibebankan pada pembagunan website cointech2umalaysia.com
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section id="newsletter" class="bg-softBlue">
-      <div class="mx-auto max-w-lg py-24">
-        <p
-          class="mb-6 text-center font-semibold uppercase tracking-widest text-black/70"
-        >
-          3,300+ Already Joined My Team
-        </p>
-        <h2 class="mb-6 px-3 text-center text-black/70">
-          Stay up-to-date with what we're doing
-        </h2>
-
-        <!-- Form -->
-        <form
-          class="mx-auto flex max-w-2xl flex-col items-start justify-center space-y-6 px-6 text-base md:flex-row md:space-x-4 md:space-y-0 md:px-0"
-        >
-          <!-- Input & Button Container -->
-          <div
-            class="mx-auto flex flex-col items-center justify-between md:mx-0 md:flex-row"
-          >
-            <img src="./image/id_telegram.png" alt="id-tele" class="w-28" />
-
-            <p class="animate-bounce font-extrabold text-rose-500">
-              Contact Me Now!
-            </p>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-veryDarkBlue py-16">
-      <!-- Footer Flex Container -->
-      <div
-        class="container mx-auto flex flex-col items-center justify-between space-y-16 px-6 md:flex-row md:space-y-0"
+      <script src="./js/script.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script
+        defer
+        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+      ></script>
+      <script>
+        AOS.init()
+      </script>
+      <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async
       >
-        <!-- Logo/Menu Container -->
-        <div
-          class="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-x-14 md:space-y-0"
-        >
-          <img src="./image/logo_min.png" alt="" class="mb-1 w-12" />
-
-          <a href="#features" class="uppercase hover:text-darkred">Features</a>
-          <a
-            href="https://drive.google.com/drive/folders/1CDGLkuC0EVtjqN1cLKgyrYy773dXo0UY?usp=sharing"
-            class="uppercase hover:text-darkred"
-            >Download</a
-          >
-          <a href="#faq" class="uppercase hover:text-darkred">FAQ</a>
-        </div>
-
-        <!-- Social Container -->
-        <div class="flex space-x-10">
-          <a href="#">
-            <img src="./image/icon-facebook.svg" alt="" class="ficon h-6" />
-          </a>
-          <a href="#">
-            <img src="./image/icon-twitter.svg" alt="" class="ficon h-6" />
-          </a>
-        </div>
-      </div>
-    </footer>
-
-    <script src="./js/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <script>
-      AOS.init()
-    </script>
+          {
+          "symbols": [
+            {
+              "description": "",
+              "proName": "BINANCE:BTCBUSD"
+            },
+            {
+              "description": "",
+              "proName": "BINANCE:ETHBUSD"
+            },
+            {
+              "description": "",
+              "proName": "BINANCE:BNBBUSD"
+            },
+            {
+              "description": "",
+              "proName": "BINANCE:XRPBUSD"
+            }
+          ],
+          "colorTheme": "dark",
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+      </script>
+    </div>
   </body>
 </html>
